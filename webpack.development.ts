@@ -33,7 +33,7 @@ module.exports = (env: { mode: "development" | "production" }) => {
         },
 
         output: {
-            path: path.resolve(__dirname, "dist"),
+            path: path.resolve(__dirname, "dev"),
             filename: "game.js",
             chunkFilename: "game-library.js",
         },

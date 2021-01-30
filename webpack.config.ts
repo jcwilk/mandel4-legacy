@@ -43,7 +43,10 @@ module.exports = (env: { mode: "development" | "production" }) => {
         },
 
         plugins: [
-            new HtmlWebpackPlugin(),
+            new HtmlWebpackPlugin({
+                title: "Mandel4",
+                minify: false,
+            }),
             new CopyPlugin({
                 patterns: [
                     {

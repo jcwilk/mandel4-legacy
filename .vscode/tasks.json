@@ -8,7 +8,9 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "label": "npm: dev",
+            "detail": "npm run webpack-dev-server -- --env.mode development --watch"
         }
     ]
 }
