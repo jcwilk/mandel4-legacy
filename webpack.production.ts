@@ -4,6 +4,7 @@ import * as webpack from "webpack";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import OptimizeCssAssetsPlugin from "optimize-css-assets-webpack-plugin";
 import TerserPlugin from "terser-webpack-plugin";
+import RemovePlugin from "remove-files-webpack-plugin";
 
 module.exports = (env: { mode: "development" | "production" }) => {
     return {
@@ -66,6 +67,20 @@ module.exports = (env: { mode: "development" | "production" }) => {
             }),
 
             new webpack.ProgressPlugin(),
+
+            new RemovePlugin({
+                before: {
+                    // parameters for "before normal compilation" stage.
+                    include: ["./docs"],
+                },
+                watch: {
+                    // parameters for "before watch compilation" stage.
+                    include: ["./docs"],
+                },
+                after: {
+                    // parameters for "after normal and watch compilation" stage.
+                },
+            }),
         ],
 
         optimization: {

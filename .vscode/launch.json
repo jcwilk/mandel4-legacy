@@ -11,7 +11,11 @@
             "url": "http://0.0.0.0:8080",
             "webRoot": "${workspaceFolder}",
             "sourceMaps": true,
-            "runtimeArgs": ["--remote-debugging-port=9222", "--user-data-dir=/home/user/devcaches/.chrome-cache/"]
+            "runtimeArgs": [
+                "--remote-debugging-port=9222",
+                "--user-data-dir=/home/user/devcaches/.chrome-cache/",
+                "--incognito"
+            ]
         },
         {
             "name": "Launch Chromium against localhost",
@@ -21,7 +25,11 @@
             "sourceMaps": true,
             "webRoot": "${workspaceFolder}",
             "runtimeExecutable": "/snap/bin/chromium",
-            "runtimeArgs": ["--remote-debugging-port=9222", "--user-data-dir=/home/user/devcaches/.chromium-cache/"]
+            "runtimeArgs": [
+                "--remote-debugging-port=9222",
+                "--user-data-dir=/home/user/devcaches/.chromium-cache/",
+                "--incognito"
+            ]
         },
         {
             "name": "Launch Brave against localhost",
@@ -31,7 +39,11 @@
             "sourceMaps": true,
             "webRoot": "${workspaceFolder}",
             "runtimeExecutable": "/snap/bin/brave",
-            "runtimeArgs": ["--remote-debugging-port=9222", "--user-data-dir=/home/user/devcaches/.brave-cache/"]
+            "runtimeArgs": [
+                "--remote-debugging-port=9222",
+                "--user-data-dir=/home/user/devcaches/.brave-cache/",
+                "--incognito"
+            ]
         }
     ]
 }

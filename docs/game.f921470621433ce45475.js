@@ -155,8 +155,7 @@
             var e = function resize() {
                 _.renderer.resize(window.innerWidth, window.innerHeight),
                     (_.stage.scale.x = window.innerWidth / 800),
-                    (_.stage.scale.y = window.innerHeight / 600),
-                    alert("hi");
+                    (_.stage.scale.y = window.innerHeight / 600);
             };
             e(), window.addEventListener("resize", e);
         }
