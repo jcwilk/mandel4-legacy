@@ -1,3 +1,5 @@
+UPDATE - the webpack boilerplate ended up being more of a headache to set up and maintain than it was helpful so I figured I'd just whip a webpack repo up from scratch instead which is now at jcwilk/mandel4 - This repo is just being kept for convenience.
+
 # Mandel4
 
 The fourth iteration of my mandelbrot explorers, this time giving `pixi-typescript-boilerplate` with VSCode a shot.
